@@ -1,0 +1,15 @@
+The format of config:
+parameters:
+
+k1=9
+k2 = 90
+
+equations:
+
+a + b -> c
+4*c -> d
+
+initials:
+
+a=6
+b=9
