@@ -4,7 +4,7 @@ import pickle
 from DS_solver import bioDS
 from cell_cycle import cell
 import matplotlib.pyplot as plt
-for ppath in ['SinIR_delayf2_d/','SinIR_delayf2/','SinIR_delayk05/','SinIR_delayk05_2/','SinIR_delayk05_3/','SinIR_delayf2_2/','SinIR_delayf2_3/','SinIR_delayf3/','SinIR_delayk02/','SinIR_delayk1/']:
+for ppath in ['SinIR_delayf2_5/']:
 	print(ppath)	
 	test=cell(path=ppath)
 	test.load()
@@ -12,7 +12,7 @@ for ppath in ['SinIR_delayf2_d/','SinIR_delayf2/','SinIR_delayk05/','SinIR_delay
 	test.simulate(tmax=30)
 	test.update()
 	test.clear()
-	for i in range(50000):
+	for i in range(20000):
 		test.simulate(tmin=i*0.5,tmax=i*0.5+0.5,tsteps=30)
 		test.parameterTurn(sigma=0.25)
 		if (i/1000)*1000==i:

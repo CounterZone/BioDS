@@ -10,11 +10,11 @@ import 	scipy.ndimage.filters as filters
 for kkk in [5]:
 	print(ppath)	
 	tt,yy,zz=pickle.load(open(ppath+"f.pickle"))
-	yy=filters.gaussian_filter(yy,5)
+#	yy=filters.gaussian_filter(yy,30)
 	maximx=[]
 	maximy=[]
-	for k in range(len(zz)-1):
-		if yy[k]>yy[k-1] and yy[k]>yy[k+1]:
+	for k in range(5,len(zz)-5):
+		if yy[k]==np.max(yy[k-5:k+5]):
 			maximx.append(yy[k])
 			maximy.append(zz[k])
 	hist1,bin1=np.histogram(maximx,bins=50)
