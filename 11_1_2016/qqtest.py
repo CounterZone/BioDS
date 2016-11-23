@@ -4,7 +4,7 @@ import pickle
 from DS_solver import bioDS
 from cell_cycle import cell
 import matplotlib.pyplot as plt
-for ppath in ['SinIR_delayf2_5/']:
+for ppath in ['SinIR_delayf2_5/','SinIR_delayf2_4/','SinIR_delayf2_d/']:
 	print(ppath)	
 	test=cell(path=ppath)
 	test.load()
