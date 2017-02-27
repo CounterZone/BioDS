@@ -2,7 +2,8 @@
 
 # Transcription
 
-trep=0
+trep=02
+tt=2
 
 viKinA=5.5
 
@@ -29,9 +30,7 @@ kb=500
 
 k1=1000
 
-ka1=500
 
-ka2=0
 
 k2=300
 

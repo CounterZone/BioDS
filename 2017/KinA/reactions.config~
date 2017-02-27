@@ -1,8 +1,8 @@
 
 # Transcription
-->KinA		|	2*viKinA/(2**(((t-trep)/tt)%1+trep/tt))
+->KinA		|	2*viKinA/(2**(((t-trep)/6)%1+trep/6))
 ->Spo0A		|	(v0A0+v0Amax*(s)/(K0A+s))
-->Spo0F		|	2*(v0F0+v0Fmax*(s**2)/(K0F**2+s**2))/(2**(((t)%tt)/tt))
+->Spo0F		|	2*(v0F0+v0Fmax*(s**2)/(K0F**2+s**2))/(2**(((t)%6)/6))
 ->Spo0B		|	0.7
 ->Rap		|	0.105	
 ->Spo0E		|	0.07
@@ -11,7 +11,7 @@
 
 # Delay analog 
 
-->s	|		100*(Spo0A_p-s)
+->s	|		0.7*(Spo0A_p-s)
 
 
 
@@ -42,15 +42,6 @@ Spo0B_p_Spo0A   -> Spo0B_p + Spo0A 		|	k5*Spo0B_p_Spo0A
 
 Spo0B_p_Spo0A   -> Spo0A_p + Spo0B		|	k6*Spo0B_p_Spo0A
 Spo0A_p + Spo0B -> Spo0B_p_Spo0A		|	kb*Spo0B*Spo0A_p
-
-
-KinA_p + Spo0A ->   KinA_p_Spo0A		|	kb*KinA_p*Spo0A
-KinA_p_Spo0A   ->   KinA_p + Spo0A 		|	ka1*KinA_p_Spo0A
-
-
-KinA_p_Spo0A   ->   KinA + Spo0A_p		|	ka2*KinA_p_Spo0A
-KinA + Spo0A_p ->   KinA_p_Spo0A  		|	kb*KinA*Spo0A_p
-
 
 # Feedback repression
 
