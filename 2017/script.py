@@ -35,7 +35,7 @@ kina.load()
 kina.set('trep',0)
 
 
-cs2=tools.scan_range(kina,parameter='viKinA',exp='Spo0A_p',space=np.linspace(0,20,10),save=True,show=False,fname="skina",savelog=False,time=30)
+cs2=tools.scan_range(kina,parameter='viKinA',exp='Spo0A_p',space=np.linspace(0,20,10),save=True,show=False,fname="skina",savelog=False,time=40)
 
 '''
 ymax=cs[0]
@@ -52,7 +52,7 @@ plt.plot(np.linspace(0,20,5),yave,label="WT",linewidth=1.0)
 
 kinc.set("ka2",100)
 
-cs=tools.scan_range(kinc,parameter='viKinA',exp='KinA_p',space=np.linspace(0,20,10),save=True,show=False,fname="skina",savelog=False,time=30)
+cs=tools.scan_range(kinc,parameter='viKinA',exp='KinA_p',space=np.linspace(0,20,10),save=True,show=False,fname="skina",savelog=False,time=40)
 ymin=cs[1]
 yave=cs[2]
 ymax=cs[0]
