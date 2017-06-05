@@ -16,7 +16,7 @@
 
 # components:[A,B,C,D](sorted by name)
 
-# equations:{A:{1,-1},B:{1,-2},C:{1:1,2:1},D:{1,1;2,-1}}
+# equations:{A:{1:-1},B:{1:-2},C:{1:1,2:1},D:{1:1,2:-1}}
 
 # reactions:{1:"k1*C",2:"k2"}
 

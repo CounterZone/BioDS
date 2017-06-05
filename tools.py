@@ -18,7 +18,7 @@ def scan_range(model,parameter,exp,space,save="False",fname="range_scan",time=15
 		if savelog:
 			model.display([exp],save=True,show=False,fname=parameter+"=%.2f"%i)
 		model.update()
-		scan.append(model.trajectory[1])
+		scan.append(model.trajectory)
 	trmax=[]
 	trmin=[]
 	trave=[]

@@ -2,7 +2,7 @@ import numpy as np
 from scipy.integrate import ode,odeint 
 import config
 import matplotlib.pyplot as plt
-
+from math import *
 class bioDS(object):
 	def __init__(self,components=[],parameters={},equations={},reactions={},initials={},path=""):
 		self.components=components
@@ -32,6 +32,7 @@ class bioDS(object):
 			values[self.components[i]]=x[i]
 		values["t"]=t
 		values.update(self.parameters)
+		values.update({'sin':sin,'cos':cos,'pi':pi})
 		for i in range(0,len(y)):
 			for j in self.equations[self.components[i]].keys():
 				y[i]=y[i]+eval(self.reactions[j],values)*self.equations[self.components[i]][j]
