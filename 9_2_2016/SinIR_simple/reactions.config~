@@ -8,7 +8,7 @@
 
 ->SlrR		|   (vslrr0+vslrrmax*(Kmslrr**nslr/(SinR**nslr+Kmslrr**nslr)))
 
-#->Ptap          |   vptap0+vptapmax*(Kmptap**ntap/(SinR**ntap+Kmptap**ntap))
+->Ptap          |   vptap0+vptapmax*(Kmptap**ntap/(SinR**ntap+Kmptap**ntap))
 
 
 
@@ -26,7 +26,7 @@ SinR_SlrR->SinR+SlrR	|kd2*SinR_SlrR
 SinI		-> 	|kdeg* SinI	 
 SinR		->      |kdeg* SinR	 
 SlrR		->	|kdeg* SlrR	 
-#Ptap		->	|kdeg* Ptap	 
+Ptap		->	|kdeg* Ptap	 
 SinI_SinR	->	|kdeg* SinI_SinR
 SinR_SlrR	->	|kdeg* SinR_SlrR
 
