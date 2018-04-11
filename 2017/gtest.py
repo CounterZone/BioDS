@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.integrate import odeint 
 import matplotlib.pyplot as plt
-from DS_solver import bioDS
+from BioDS.DS_solver import bioDS
 test=bioDS(path='KinA/')
 '''
 test.load()
