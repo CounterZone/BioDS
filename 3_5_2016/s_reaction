@@ -1,5 +1,0 @@
-->ptapa		|  va0+va*(Spo0A_p**na1/(Spo0A_p**na1+Ka1**na1))*(Ka2**na2/(Spo0A_p**na2+Ka2**na2))
-->pspoIIg	|  vb0+vb*(Spo0A_p**nb/(Spo0A_p**nb+Kb**nb))
-
-ptapa->		|	kdeg*ptapa
-pspoIIg->	|	kdeg*pspoIIg

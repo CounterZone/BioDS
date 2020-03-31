@@ -6,7 +6,7 @@ from DS_solver import bioDS
 def scan_range(model,parameter,exp,space,save="False",fname="range_scan",time=15,show=True,steps=1000,period=6,savelog=False):
 	# For oscilating system, scan the range vs given parameter
 	# Space is the scanning space, such as [1,2,3,4,5] or np.linspace(1,10,30)
-	# exp is the displayed component 
+	# exp is the displayed component
 	scan=[]
 	plt.clf()
 	model.simulate(tmax=time,tsteps=steps)
